@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- forms are used to make html forms to take user inputs -->
+        <!-- input tags - to take inputs -->
+        <!-- label tag - text attached for each feild 
+         there is a (for) attribute whose value will be same as id of (input) element-->
+        <!-- button tag - to submit the form -->
+        
+    
+        <fieldset>
+            <!-- <legend>HTML form</legend> -->
+            <form action=""> 
+                <!-- action attribute is used to specify the
+                 url where the form data will be sent -->
+    
+                <!-- form elements- input, label, select, option, button
+                 textarea, feildarea, feildset, legend etc -->
+                
+    
+                <label for="name">Enter name</label>
+                <input type="text", id = "name", value = "abhi">
+                <br/>
+                <br/>
+                <label for="Id">Enter Id</label>
+                <input type="text", id = "Id", placeholder="ex:22bai71346">
+                <br>
+                <input type="submit" value="click here">
+                <!-- type for input can be button, text, submit, radio, date, checkbox etc -->
+                <br>
+                <label for="dob">Enter DOB</label>
+                <input type="date" id = "dob">
+                <br>
+                <label for="course">select your course</label>
+                <select name="courses" id="course" multiple>
+                    <option value="CSE">CSE</option>
+                    <option value="AIML">AIML</option>
+                    <option value="MBBS">MBBS</option>
+                </select>
+                <br>
+                <button>this is a button</button>
+                <br>
+                <textarea name="A1" id="A1" col = "2" row = "1" placeholder="enter your text"></textarea>
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend>HTML form 2</legend>
+            <form>
+                <label for="text1">text field:</label>
+                <input type="text", id = "text1", placeholder="enter text">
+                <br>
+                <br>
+                <label for="button1">Button</label>
+                <input type="button" value = "click here">
+                <br>
+                <br>
+                <label for="radio1">Male</label>
+                <input type="radio" name = "gender" id = "radio1">
+                <label for="radio2">Female</label>
+                <input type="radio" name = "gender" id = "radio2">
+                <label for="radio3">other</label>
+                <input type="radio" name = "gender" id = "radio3">
+                <br>
+                <br>
+                <label for="check1">tamil</label>
+                <input type="checkbox" name = "language" id = "check1">
+                <label for="check2">telugu</label>
+                <input type="checkbox" name = "language" id = "check2">
+                <label for="check3">hindi</label>
+                <input type="checkbox" name = "language" id = "check3">
+                <br>
+                <br>
+                <label for="file1">select file</label>
+                <input type="file" name = "file" id = "file1" >
+                <br>
+                <br>
+                <!-- <label for="imgasbutton"></label> -->
+                <input type="image" id = "imgasbutton" height = "200px", width = "300px" src="https://www.aimosta.com/images/radiobutton-tw.png" alt="google">
+                <br>
+                <br>
+                <label for="password">password</label>
+                <input type="password" name = "password" id = "password" placeholder="enter password">
+                <br>
+                <br>
+                <label for="date">select date</label>
+                <input type="date" name = "date" id = "date">
+            </form>
+        </fieldset>
+
+        <br>
+        <br>
+        <h1>Event registration</h1>
+        <form>
+            <label for="name">Enter Name:</label>
+            <input type="text" id="name" placeholder="ex:mugi">
+            <br>
+            <label for="mail">Enter Email ID:</label>
+            <br>
+            <input type="email" id = "mail" placeholder="ex:xyz@gmail.com">
+            <br>
+            <label for="number">enter Mobile number</label>
+            <br>
+            <input type="tel" id = "number" placeholder="ex:9876543210">
+            <br>
+            <label for="occupation">Select occupation</label>
+            <br>
+            <select name="occupation" id="occupation" >
+                <option value="student">student</option>
+                <option value="employee">employee</option>
+                <option value="self-employed">self-employed</option>
+                <option value="others">others</option>
+            </select>
+            <br>
+            topics interested in:
+            <br>
+            <label for="c++">c++</label>
+            <input type="checkbox" id = "c++" name = "c++">
+            <label for="java">java</label>
+            <input type="checkbox" id = "java" name = "java">
+            <label for="python">python</label>
+            <input type="checkbox" id = "python" name = "python">
+            <br>
+            comments:
+            <br>
+            <input type="textarea" id = "comments" name = "comments" placeholder="enter your comments">
+            <br>
+            <input type="submit" value = "submit">
+        </form>
+
+        <h2>Job application</h2>
+        <form action="">
+            <label for="Name">Name:</label>
+            <input type="text" id = "Name" placeholder="enter your name">
+            <br>
+            <label for="mail">Email:</label>
+            <input type="email" id = "mail" placeholder="enter your email">
+            <br>
+            <label for="number">Phone:</label>
+            <input type="tel" id = "number" placeholder="enter your phone number">
+            <br>
+            Resume:
+            <br>
+            <input type="file" id = "resume" name = "resume">
+            <br>
+            <label for="exp">Experience(years):</label>
+            <input type="number" id = "exp" placeholder="0">
+            <br>
+            <fieldset>
+                <legend>Skills:</legend>
+                <label for="skill1">HTML</label>
+                <input type="checkbox" id = "skill1" name = "skill1">
+                <br>
+                <label for="skill2">CSS</label>
+                <input type="checkbox" id = "skill2" name = "skill2">
+                <br>
+                <label for="skill3">JS</label>
+                <input type="checkbox" id = "skill3" name = "skill3">
+            </fieldset>
+            <br>
+            Higher Education:
+            <br>
+            <select name="education" id="education">
+                <option value="12th">high school</option>
+                <option value="B.E">B.E</option>
+                <option value="B.Tech">B.Tech</option>
+                <option value="M.E">M.E</option>
+                <option value="M.Tech">M.Tech</option>
+            </select>
+            <br>
+            Availability:
+            <br>
+            <input type="radio" id = "fulltime" name = "availability">
+            <label for="fulltime">Full time</label>
+            <input type="radio" id = "parttime" name = "availability">
+            <label for="parttime">Part time</label>
+            <br>
+            Cover Letter:
+            <br>
+            <input type="textarea" id="coverletter" name="coverletter" placeholder="enter your cover letter">
+            <br>
+            <input type="submit" value="submit">
+        </form>
+
+        <h2>Complex Form</h2>
+        <form action="">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id = "name">
+                <label for="mail">Email:</label>
+                <input type="email" id = "mail">
+                <label for="place">Place:</label>
+                <input type="text" id = "place">
+                <label for="dob">DOB:</label>
+                <input type="date" id = "dob">
+                gender:
+                <input type="radio" id = "male" name = "gender">
+                <label for="male">Male</label>
+                <input type="radio" id = "female" name = "gender">
+                <label for="female">Female</label>
+            </fieldset>
+            <fieldset>
+                <label for="street">Address street</label>
+                <input type="text" id = "street">
+                <label for="city">City</label>
+                <input type="text" id = "city">
+                <label for="state">State</label>
+                <input type="text" id = "state">
+                <label for="code">Zip code</label>
+                <input type="text" id = "code">
+            </fieldset>
+            <fieldset>
+                <legend>other info</legend>
+                <label for="comment">Comments</label>
+                <input type="textarea" id = "comment">
+                <label for="consent">I agree to the terms</label>
+                <input type="checkbox" id = "consent">
+            </fieldset>
+            <input type="submit" value="submit">
+        </form>
+</body>
+</html>

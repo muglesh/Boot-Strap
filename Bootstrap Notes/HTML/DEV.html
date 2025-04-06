@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal list</title>
+    <style>
+        ul.horizontal-list{
+            list-style-type : none;
+            padding : 0;
+            margin : 0;
+            display : flex;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- div tag (generic tag) is a non sementic tag which is used to create 
+    divion or wrapping or container -->
+     <div class="wrapper">
+
+     </div>
+
+    <!-- block element - comes int the next line and takes all space from left to right-->
+    <!-- ex : div, p, 
+    can be known by setting background color-->
+        <p style="background-color: aqua;">hello guys</p>
+
+    <!-- inline element - comes in the same line and takes only required space-->
+     <!-- ex : span -->
+      <span style="background-color: green;"> this is inline</span>
+    
+     <br>
+    <!-- block to inline (change display attribute)-->
+        <p style="background-color: rgb(200, 121, 19); display : inline;">this is a block as inline</p>
+
+    
+    <nav>
+        <ul class ="horizontal-list">
+            <li>one</li>
+            <li>two</li>
+        </ul>
+    </nav>
+</body>
+</html>

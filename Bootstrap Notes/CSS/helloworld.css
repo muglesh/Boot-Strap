@@ -1,0 +1,126 @@
+/* h1{
+    background-color: red;
+    font-size: medium;
+    color:red;
+} */
+/* p{
+    background-color: red;
+} */
+/* types of selectors */
+/* element selector:  use tag like p, section etc*/
+/* id selector: use the id  with #*/
+/* class selector: use the class with .*/
+/* attribute selector: use the attribute with [] */
+/* group selector: use , for grouping different elements(ex : section, p) */
+/* universal selector: use * */
+/* .p1{
+    font-style: italic;
+    font-size: 30px;
+    font-family: Arial;
+    line-height: 50px;
+}
+.para1{
+    border-style: solid;
+    border-width: 5px;
+    border-color: blue;
+    shortcut- border : solid 5px blue
+    border-radius: 5px;
+    padding: 10px;
+} */
+ /* best practice: margin : 0 , padding : 0*/
+/* box model - content, padding, border, margin */
+    /* box-sizing: border-box; it will include padding and border in the width and height */
+    /* context box; it is by default */
+
+/* display property: inline, block, inline block */
+    /* inline: tries for same line, content space, no height or width modification,
+    no margin or padding can be set */
+    /* block: next line, takes space from left to right, modification of height or width
+    margin and padding can be set */
+    /* inline-block: same as inline but allows modification of h/w/m/p */
+img{    
+    height : 100px;
+    width : 150px;
+}
+.container{
+    height : 5000px;
+    width : 5000px;
+}
+.img1{
+    height : 100px;
+    width: 150px;
+    position: relative;
+}
+.img2{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+/* .img2{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+} */
+/* positioning property */
+    /* static: default value (there is no accessablity og top, bottom, left, right, z score*/
+    /* relative: relative to its normal position */
+    /* absolute: relative to its parent element that is closest ancestor  and all
+    other will use the space (used from over lapping images)*/
+    /* fixed: does not move anywhere on the screen(constant throughoput the webpage */
+    /* sticky: relative to its normal position until it reaches the end of the parent it is in */
+
+/* size units */
+    /* %- takes relative to immediate parent */
+    /* vh- is percentage wrt to view port height */
+    /* vw- is percentage wrt to view port width */
+    /* px - 1/96 of an inch */
+    /* em- relative to the font size of immediate parent */
+    /* rem - relative to root element (multiply with 16 px) */
+
+/* float: property of image (image + text)*/
+/* clear - ensures that there are no images floating on the directions mentioned */
+/* overflow- used to prevent content from overflowing the parent
+overflow can be - hidden, scroll, auto */
+
+/* flex box */
+    /* parent container, main axis(flex-direction), cross axis
+    start (left / up), end (bottom / right), elements are called flex item*/
+    /* make display flex (default flex direction is row*/
+    /* flex direction: row, row-reverse, column, column-reverse */
+    /* flex wrap: does not change the dimenions of the elements 
+    wrap, wrap-reverse, nowrap*/
+    /* flex-flow */
+    /* justify-content: places elements in the main axis
+    space-between, space-around, space-evenly, center, flex-start, flex-end */
+    /* align-items : places elements in the cross axis
+    stretch, center, flex-start, flex-end, baseline */
+    /* align-content: manages space beteen the rows when wrapping */
+
+/* flex-item: in the main axis */
+    /* order property: used to change the sequence of item */
+    /* flex-shrink: rate of shrinking */
+    /* flex-grow: rate of growing */
+    /* flex basis: sets the default dimensions */
+
+/* align-self : in cross axis 
+    start, end, center*/
+
+/* media query : defining css for different device */
+    /* @media screen and (max-width: 600px){
+        body{
+            background-color: red;
+        }
+    } */
+    /* @media screen and (min-width: 600px) and (max-width: 900px){
+        body{
+            background-color: blue;
+        }
+    } */
+    /* @media screen and (min-width: 900px){
+        body{
+            background-color: green;
+        }
+    } */
+
+/* custom variable - (--variable_name) */

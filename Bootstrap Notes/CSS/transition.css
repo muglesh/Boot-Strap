@@ -1,0 +1,27 @@
+.box{
+    height : 200px;
+    width : 200px;
+    display : flex;
+    justify-content : center;
+    background: lightcoral;
+    align-items: center;
+    border: 2px solid black;
+    position : relative;
+    left : 45%;
+    top : 300px;
+    transition : all 2s ease;
+    p{
+        transition : all 2s ease;
+    }
+}
+/* .box:hover{
+    transform:rotate(45deg);
+    p{
+        transform:rotate(-45deg);
+    }
+} */
+.box:hover{
+    /* transform:scale(1.5); */
+    /* transform: skew(-15deg); */
+    transform:translate(100px, 50px)
+}
