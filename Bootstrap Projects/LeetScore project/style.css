@@ -1,0 +1,90 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    height : 100vh;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgray;
+}
+.container{
+    display : flex;
+    flex-direction: column;
+    width : 500px;
+    background-color: rgb(12, 52, 86);
+    padding: 2rem;
+    gap : 2rem;
+    justify-content: center;
+    align-items: left;
+    border-radius: 0.5rem;
+    color : white;
+}
+h1{
+    font-size: 2.5rem;
+}
+.user-container{
+    display : flex;
+    flex-direction: column;
+    gap : 0.5rem;
+}
+.user-input-container{
+    display : flex;
+    justify-content: space-between;
+    width : 100%;
+    max-width : 500px;
+}
+#user-input{
+    width :100%;
+    padding : 0.5rem;
+    background-color: white;
+    border-top-left-radius: .1rem;
+    border-bottom-left-radius: .1rem;
+    border : none;
+}
+#submit-button{
+    width : 60px;
+    padding : 0.5rem;
+    border : none;
+    border-top-right-radius: .1rem;
+    border-bottom-right-radius: .1rem;
+}
+.circle{
+    width : 120px;
+    height : 120px;
+    border-radius: 50%;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border : 4px solid rgb(18, 129, 0);
+    background : conic-gradient(rgb(59, 198, 59) var(--progress-degree, 0%),rgb(43, 53, 73) 0%);
+    font-weight: 600;
+    position : relative;
+    span{
+        z-index: 2;
+    }
+}
+.progress{
+    display : flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap : 1rem;
+}
+.stats-cards{
+    display : flex;
+    flex-wrap: wrap;
+    gap : 0.5rem;
+}
+.card{
+    width : 200px;
+    background-color: rgb(65, 26, 173);
+    padding : 1rem;
+    border-radius: .5rem;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+}

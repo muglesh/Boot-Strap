@@ -1,0 +1,123 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+body{
+    height : 1200px;
+}
+.container{
+    width : 100%;
+    height : 100%;
+    background-color: rgb(255, 255, 255);
+    display : flex;
+    flex-direction : column;
+    align-items: center;
+    justify-content: space-around;
+}
+header{
+    width : 100%;
+    height : 10%;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-title{
+    height : 30%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(54, 51, 51);
+}
+.header-discription{
+    width : 40%;
+    height : 70%;
+    padding-top: 20px;
+    text-align: center;
+}
+.content{
+    display : grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+    width : 82%;
+    height : 80%;
+    /* border: 2px solid grey; */
+    /* background-color: rgba(255, 255, 255, 0.757); */
+    gap:30px;
+    padding : 2rem;
+    place-content: center;
+    /* border-radius: 2%; */
+    justify-self: center;
+    /* box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px; */
+}
+/* @media(max-width:500px){
+    .content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1000px){
+    .content{
+        grid-template-columns: repeat(4, 1fr);
+    }
+} */
+.card{
+    display:flex;
+    flex-direction: column;
+    height: 450px;
+    /* width : 30%; */
+    border-radius: 2%;
+    overflow: hidden;
+    justify-content: space-between;
+    /* box-shadow: 1px 1px .8rem black; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.image{
+    height : 50%;
+    width : 100%;
+    img{
+        width : 100%;
+        height : 100%;
+        transition: all 0.5s ease ;
+    }
+    overflow : hidden;
+}
+.image:hover{
+    img{
+        transform : scale(1.1);
+    }
+}
+.card-title{
+    align-self: center;
+    text-align: center;
+    h2{
+        font-size: 1.3rem;
+    }
+    
+}
+.discription{
+    text-align: center;
+    align-self : center;
+    width : 80%;
+    p{
+        font-size: 1rem;
+    }
+}
+.details{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.user{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+        color : rgb(66, 131, 229);
+    }
+}
+.category{
+    padding : 2px;
+    border : 1px solid grey;
+    border-radius: 2px;
+    background-color: rgba(128, 135, 135, 0.397);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

@@ -1,0 +1,43 @@
+*{
+    margin : 0;
+    padding : o;
+    box-sizing: border-box;
+}
+.container{
+    height : 1000px;
+    width : 100vw;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    height : 600px;
+    width : 400px;
+    background: rgb(142, 141, 141);
+    border-radius: 20px;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.image{
+    /* overflow: hidden; */
+    background-image: url(mugi.jpg);
+    background-size: cover;
+    height : 400px;
+    width : 320px;
+    border-radius : 10px;
+}
+.title h1{
+    font-size: 2.5rem;
+    font-family:'Times New Roman', Times, serif;
+    color: #fdfcfb;
+    text-shadow: 1px 1px  5px black;
+    font-weight: 600;
+}
+.discription p{
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fdfcfb;
+}

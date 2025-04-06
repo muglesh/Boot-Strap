@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id ="setTime">
+        <h1>Set Timer</h1>
+        <div class="control-panel">
+            <div class="inputs">
+                <div class="days">
+                    <input type="number" class = "entries" id = "daysInput" placeholder="0" />
+                    <label for="daysInput">Days</label>
+                </div>
+                <div class="hours">
+                    <input type="number"  class = "entries" id = "hrsInput" min="0" max="23" placeholder="0" step = 1 maxlength=2 />
+                    <label for="hrsInput">hrs</label>
+                </div>
+                <div class="minutes">
+                    <input type="number"  class = "entries" id = "minsInput" min="0" max="59" placeholder="0">
+                    <label for="minsInput">mins</label>
+                </div>
+                <div class="seconds">
+                    <input type="number"  class = "entries" id = "secsInput" min="0" max="59" placeholder="0">
+                    <label for="secsInput">secs</label>
+                </div>
+            </div>
+            <div class="controls">
+                <button id = "startbtn">start</button>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="duringCount" style = "display: none;">
+        <h1 id = "countdounHead">Clock's Ticking</h1>
+        <div class="control-panel">
+            <section id = "endTime"></section>
+            <div class="controls">
+                <button id = "pausebtn">pause</button>
+                <button id = "resumebtn">resume</button>
+                <button id = "resetbtn">reset</button>
+            </div>
+        </div>
+        <div class="progress" id = "ps">
+            <div id="countdown">
+                <div>
+                    <span class = "digits" id = "days">0</span>
+                    <span>Days</span>
+                </div>
+                <div>
+                    <span class = "digits" id = "hours">0</span>
+                    <span>Hrs</span>
+                </div>
+                <div>
+                    <span class = "digits" id = "minutes">0</span>
+                    <span>Mins</span>
+                </div>
+                <div>
+                    <span class = "digits" id = "seconds">0</span>
+                    <span>Secs</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src = "script.js"></script>
+</body>
+</html>

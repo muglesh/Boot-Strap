@@ -1,0 +1,105 @@
+*{
+    margin : 0; 
+    padding : 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    /* color : white; */
+}
+body{
+    width : 100vw;
+    height : 100vh;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.container{
+    padding :30px 20px;
+    gap : 30px;
+    background-color: goldenrod;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 3%;
+    min-width : 300px;
+    min-height : 300px;
+
+}
+.control-panel{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    border : 2px solid rgb(92, 92, 92);
+    padding: 15px;
+    border-radius: 2%;
+}
+.inputs{
+    /* width : 100%; */
+    padding : 10px;
+    display : flex;
+    gap : 10px;
+    /* justify-content: space-evenly; */
+}
+.entries{
+    width : 25px;
+    text-align: center;
+    border : none;
+    border-radius: 2px;
+}
+.entries:focus{
+    outline: none;
+}
+.controls 
+{
+    display : flex;
+    gap : 100px;
+    padding : 10px;
+    button{
+        width : 60px;
+        height : 25px;
+        background-color: white;
+        border : none;
+        border-radius: 3px;
+
+        transition: all 0.5s ease;
+    }
+}
+.controls button:hover{
+        background-color: rgb(184, 184, 184);
+        transform: scale(1.1);
+}
+.progress{
+    background: conic-gradient(rgb(59, 198, 59) var(--progress-degree, 0%),rgb(43, 53, 73) 0%);
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+#countdown{
+    margin : 10px;
+    display : flex;
+    justify-content: space-around;
+    gap : 10px;
+    padding : 20px;
+    font-weight: 400;
+    border : 2px solid black;
+    div{
+        display : flex;
+        gap : 1px;
+        span{
+            display : flex;
+            align-items: center;
+        }
+    }
+    .digits{
+        background-color: black;
+        color : white;
+        padding : 5px;
+        border-radius: 3px;
+        font-size: larger;
+    }
+    background-color: goldenrod;
+    border-radius: 3px;
+}
+#resumebtn{
+    display : none;
+}
